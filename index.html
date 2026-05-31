@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape Transformer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="quadrant" data-quadrant="top-left">
+        <div class="quadrant-header">
+          <h2>Circle</h2>
+          <button class="add-shape-btn">+</button>
+        </div>
+      </div>
+
+      <div class="quadrant" data-quadrant="top-right">
+        <div class="quadrant-header">
+          <h2>Hexagon</h2>
+          <button class="add-shape-btn">+</button>
+        </div>
+      </div>
+
+      <div class="quadrant" data-quadrant="bottom-left">
+        <div class="quadrant-header">
+          <h2>Square</h2>
+          <button class="add-shape-btn">+</button>
+        </div>
+      </div>
+
+      <div class="quadrant" data-quadrant="bottom-right">
+        <div class="quadrant-header">
+          <h2>Triangle</h2>
+          <button class="add-shape-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <footer id="delete-zone">Drop here to delete</footer>
+    <script type="module" src="./dist/src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: calc(100vh - 80px);
+}
+
+#delete-zone {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8d7da;
+  border-top: 2px dashed #e74c3c;
+  color: #c0392b;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+#delete-zone.drag-over {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.quadrant {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.quadrant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add-shape-btn {
+  cursor: pointer;
+}
+
+.shape-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.shape {
+  cursor: grab;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #3498db;
+  border-radius: 50%;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background: #2ecc71;
+}
+
+.hexagon {
+  width: 60px;
+  height: 60px;
+  background: #9b59b6;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #e74c3c;
+}
